@@ -1,19 +1,19 @@
 class Solver
-    def factorial (n)
-        result = 1
+  def factorial(_num)
+    result = 1
     return result if [0, 1].include?(n)
     raise StandardError, 'Number cannot be negative' if n.negative?
 
     (1..n).each { |i| result *= i }
     result
-    end
+  end
 
-    def reverse (word)
-        word.reverse
-    end
+  def reverse(word)
+    word.reverse
+  end
 
-    def fizzbuzz (n)
-        if (n % 3).zero? && (n % 5).zero?
+  def fizzbuzz(_num)
+    if (n % 3).zero? && (n % 5).zero?
       'fizzbuzz'
     elsif (n % 3).zero?
       'fizz'
@@ -22,5 +22,5 @@ class Solver
     else
       n.to_s
     end
-    end
+  end
 end

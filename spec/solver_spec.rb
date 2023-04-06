@@ -1,7 +1,7 @@
 require_relative '../solver'
 
 describe Solver do
-    describe '#factorial' do
+  describe '#factorial' do
     solver = Solver.new
     it 'should raise an exception when n is negative' do
       expect { solver.factorial(-2) }.to raise_error(StandardError, 'N cannot be negative')
