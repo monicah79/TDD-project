@@ -1,8 +1,8 @@
- require_relative '../solver'
+require_relative '../solver'
 require 'rspec'
 
 RSpec.describe Solver do
-    let(:solver) { Solver.new }
+  let(:solver) { Solver.new }
 
   describe '#factorial' do
     solver = Solver.new
@@ -25,20 +25,17 @@ RSpec.describe Solver do
 
   describe '#fizzbuzz' do
     solver = Solver.new
-    it 'When n is divisible by 3 and 5, return "fizzbuzz"' do
+    it 'When number is divisible by 3 and 5, return "fizzbuzz"' do
       expect(solver.fizzbuzz(15)).to eq('fizzbuzz')
     end
-    it 'When n is divisible by 3 , return "fizz"' do
+    it 'When number is divisible by 3 , return "fizz"' do
       expect(solver.fizzbuzz(9)).to eq('fizz')
     end
-    it 'When n is divisible by 5 , return "buzz"' do
+    it 'When number is divisible by 5 , return "buzz"' do
       expect(solver.fizzbuzz(10)).to eq('buzz')
     end
-    it 'Any other case, return n as a string' do
+    it 'Any other case, return number as a string' do
       expect(solver.fizzbuzz(2)).to eq('2')
     end
   end
 end
-
-
-   
